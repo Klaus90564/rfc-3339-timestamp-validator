@@ -1,0 +1,17 @@
+{
+  "name": "rfc-3339-timestamp-validator",
+  "version": "0.1.0",
+  "description": "Validates and normalizes RFC 3339 timestamp strings, rejecting malformed offsets and fractional seconds while preserving the original timezone offset.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
