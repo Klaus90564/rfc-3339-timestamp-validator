@@ -35,3 +35,10 @@ are rejected here.
 
 - `parseRfc3339(value: string): { iso: string, offset: string, date: Date } | null`
 - `isValidRfc3339(value: string): boolean`
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
